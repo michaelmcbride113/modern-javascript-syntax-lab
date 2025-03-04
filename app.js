@@ -109,15 +109,16 @@ const anotherCar = {
 //
 // Your code here:
 
-const propertyName = {
-    email: 'example@test.com'
-};
+const propertyName = 'email';
+// {
+//     email: 'example@test.com'
+// };
 
-const userProfile = 'email';
+const userProfile = {
+  [propertyName]: 'example@test.com'
+}
 
-const userProfileEmail = propertyName[userProfile];
-
-console.log(userProfileEmail);
+console.log(userProfile);
 
 //  Exercise 8:
 // a. Create a function with two parameters, `noun` and `adjective`.
